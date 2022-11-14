@@ -1,0 +1,29 @@
+Hi guys this is just a summary from the github tutorial for us to use as a quick reference! :) 
+
+1. Install git https://git-scm.com/downloads
+
+2. Download the repository file that I made in github. (index.html) 
+
+3. Open it in VS code and open up 'terminal' in VS code. 
+
+4. This is a one time thing to set your email and name in VS code:
+type the commands in terminal: 
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+5. Now type the command "git add index.html" to track any changes you make to the file.
+
+6. After you've made changes you're happy with you can commit them to log what you've done using the following command:
+git commit -m "message" 
+-note that you can write in "message" a summary of the changes you made
+
+7. To check what changes have been made: 
+git log 
+
+8. To check the status of the file (if changes need to be committed or not)
+git status
+
+9. Very important - do not make changes directly to our main branch. We make changes in our own branches and then submit "pull requests" that get verified
+by the leader (me I guess?) to merge into the main branch. Once merged, we delete the old side branch. 
+
+10. To work in your own branch or make a new one type: 
