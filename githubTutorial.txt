@@ -2,19 +2,23 @@ Hi guys this is just a summary from the github tutorial for us to use as a quick
 
 1. Install git https://git-scm.com/downloads
 
-2. Download the repository file that I made in github. (index.html) 
+2. In VS code, use the command palette OR "ctrl + shift + p" and enter
+Git: Clone
+and then the url
+https://github.com/yummyflan/Team-Clueless.git
+Save it and you now have cloned our repository!
 
-3. Open it in VS code and open up 'terminal' in VS code. 
+3. Now open up 'terminal' in VS code. 
 
 4. This is a one time thing to set your email and name in VS code:
 type the commands in terminal: 
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 
-5. Now type the command "git add index.html" to track any changes you make to the file.
-
-6. After you've made changes you're happy with you can commit them to log what you've done using the following command:
+6. After you've made changes you're happy with you, can commit them to log what you've done by using the two commands each time:
+git add filename.html
 git commit -m "message" 
+
 -note that you can write in "message" a summary of the changes you made
 
 7. To check what changes have been made: 
@@ -40,3 +44,4 @@ git push --set-upstream origin branchname
 
 and then it will be pushed and added online!
 
+13. Finally, go on github and make a pull request for your branch. Then I'll approve and merge it if its all good!
