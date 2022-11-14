@@ -26,4 +26,17 @@ git status
 9. Very important - do not make changes directly to our main branch. We make changes in our own branches and then submit "pull requests" that get verified
 by the leader (me I guess?) to merge into the main branch. Once merged, we delete the old side branch. 
 
-10. To work in your own branch or make a new one type: 
+10. To work in your own branch/make a new one: 
+git checkout -b branchname
+
+12. To switch between branches (and look at the different code too)
+git checkout branchname 
+
+11. To push changes from VS code to github online
+git push
+
+12. If branch is not connected remotely yet it will ask you to type in 
+git push --set-upstream origin branchname
+
+and then it will be pushed and added online!
+
