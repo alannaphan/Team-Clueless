@@ -32,6 +32,7 @@ by the leader (me I guess?) to merge into the main branch. Once merged, we delet
 
 10. To work in your own branch/make a new one: 
 git checkout -b branchname
+-note to make it easy you can just name the branch your name, eg. git checkout -b alanna
 
 12. To switch between branches (and look at the different code too)
 git checkout branchname 
