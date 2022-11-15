@@ -2,11 +2,7 @@ Hi guys this is just a summary from the github tutorial for us to use as a quick
 
 1. Install git https://git-scm.com/downloads
 
-2. In VS code, use the command palette OR "ctrl + shift + p" and enter
-Git: Clone
-and then the url
-https://github.com/yummyflan/Team-Clueless.git
-Save it and you now have cloned our repository!
+2. Download GitHub's Desktop app. 
 
 3. Now open up 'terminal' in VS code. 
 
