@@ -50,3 +50,4 @@ git push --set-upstream origin branchname
 and then it will be pushed and added online!
 
 13. Finally, go on github and make a pull request for your branch. Then I'll approve and merge it if its all good!
+you can also use the github desktop app to make a pull request for your branch after your pushes :) 
