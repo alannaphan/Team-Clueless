@@ -2,3 +2,7 @@
 function moreDetail(){
     window.location.href="testing.html";
 }
+
+function home(){
+    window.location.href="FrontPage.html";
+}
