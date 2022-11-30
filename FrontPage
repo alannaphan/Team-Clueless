@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+</head>
+<body>
+    <header>Database of Animals</header>
+
+    <button id="HomeBtn" onclcik="">Home</button>
+
+<div id="TheList">
+
+    <ul>
+    <li><a> </a></li>    
+    <li><a> </a></li>    
+    <li><a> </a></li>    
+    <li><a> </a></li>    
+    <li><a> </a></li>    
+    <li><a> </a></li>    
+    <li><a> </a></li>    
+    <li><a> </a></li>    
+    <li><a> </a></li>    
+    <li><a> </a></li>    
+
+    </ul>
+</div>">
+<div id="First2">
+    <img src="" alt="animal picture">
+    <img src="" alt="animal picture">
+</div>
+<br>
+<div id="Second2">
+    <img src="" alt="animal picture">
+    <img src="" alt="animal picture">
+</div>
+<br>
+
+
+<P>
+    Our project is a mini database that users can interact with to view animal images. 
+    Users input an image or object of an animal that they would like displayed on the screen. 
+    The server will send an image to the client and display it on a display area for users to visualize. 
+    There is a list of animal images/objects to choose from on the database. 
+    The list is on the side of the webpage for easy accessibility for users. 
+    There may be more than one image to choose from for each animal after being selected.
+    A mutual fascination with animals resulted in this choice for the project.  
+</P>
+
+    <button id="LikedBtn" onclick="">Liked</button>
+
+<footer>By Team Clueless</footer>
+
+
+
+
+</body>
+</html>
