@@ -6,3 +6,7 @@ function moreDetail(){
 function home(){
     window.location.href="FrontPage.html";
 }
+
+function back(){
+    window.history.back(); 
+}
