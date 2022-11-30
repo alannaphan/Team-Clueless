@@ -1,19 +1,36 @@
+html{
+     background-color: bisque;
+}
 #header{
     
     text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
 }
 #TheList{
+    text-align: left;
   float: left;
+  border:5px solid #000000 ;
+  padding-right: 15px;
+  margin: 50px;
+
 }
 #HomeBtn{
-  
+  color: purple;
    text-align: left;
 }
-#likedbtn{
-   text-align: right;
+#LikedBtn{
+    color: purple;
+    float: right;
+    size: 20;
 }
 p{
-    border: 5px solid black ;
-    padding-left: 0%;
-    margin-left: auto;
+    text-align: center;
+
+border: 5px solid black;
+padding: 25px;
+}
+footer{
+    text-align: center;
 }
