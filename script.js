@@ -45,3 +45,6 @@ function home(){
 function back(){
     window.history.back(); 
 }
+function liked(){
+      window.location.href="LikedPage.html";
+}
