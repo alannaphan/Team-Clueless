@@ -4,37 +4,51 @@ html{
 #header{
     
     text-align: center;
-    font-size: larger;
+    font-size: 70px;
     font-weight: bold;
     font-style: italic;
 }
 #TheList{
-    text-align: left;
-  float: left;
-  border:5px solid #000000 ;
+  text-align: left;
+  position: fixed;
+  border:5px dotted #000000 ;
   padding-right: 15px;
   margin: 50px;
+  background-color: white;
 
 }
 #HomeBtn{
   color: purple;
-   text-align: left;
+  margin-left: 52px;
+  margin-top: 45px;
+  position: fixed;
 }
 #LikedBtn{
     color: purple;
-    float: right;
-    size: 20;
+    width: 5%;
+    position: absolute;
+    right: 200px;
+
 }
-p{
-    text-align: center;
-    border: 5px solid black;
-    padding: 25px;
-}
+
 footer{
     text-align: center;
 }
 img{
     width: 400px;
     height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    position: relative;
+}
+#First2 {
     text-align: center;
+}
+#description {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    border: 5px solid black;
 }
