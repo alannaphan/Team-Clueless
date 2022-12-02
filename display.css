@@ -1,1 +1,13 @@
 /* this is the css for the animal display pages*/ 
+img {
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    float: left;
+} 
+h1 {
+    text-align: center;
+}
+footer {
+    text-align: center;
+}
