@@ -27,9 +27,8 @@ html{
 }
 p{
     text-align: center;
-
-border: 5px solid black;
-padding: 25px;
+    border: 5px solid black;
+    padding: 25px;
 }
 footer{
     text-align: center;
@@ -37,4 +36,5 @@ footer{
 img{
     width: 400px;
     height: 400px;
+    text-align: center;
 }
