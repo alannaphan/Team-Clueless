@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="FrontPage.css"  rel="stylesheet">
+    <link href="display.css"  rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <header id="header">Database of Animals</header>
@@ -10,11 +10,10 @@
 <title>Front Page</title>
 </head>
 <body>
-    <button id="HomeBtn" onclick="home()">Home</button>
-    <br>
-    <button id="LikedBtn" onclick="likedPage()">Liked</button>
+    <button id="homeBtn" onclick="home()">Home</button>
+    <button id="like" onclick="likedPage()">Liked</button>
 
-<br>
+<br><br>
 <div id="TheList">
 
     <ul>
@@ -34,7 +33,7 @@
     </ul>
     <br>
 </div>
-<div id="First2">
+<div id="animalDisplay">
     <img src="photos/wombats/womB3.jpg" alt="animal picture">
     <img src="photos/cats/cat3.jpeg" alt="animal picture">
     <br>
@@ -44,7 +43,7 @@
 <br>
 
 
-<p id="description">
+<p id="info">
     Our project is a mini database that users can interact with to view animal images. 
     Users input an image or object of an animal that they would like displayed on the screen. 
     The server will send an image to the client and display it on a display area for users to visualize. 

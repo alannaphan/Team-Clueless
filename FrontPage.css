@@ -1,3 +1,4 @@
+/*this is not being used anymore, please refer to display.css
 html{
      background-color: bisque;
 }
@@ -17,13 +18,13 @@ html{
   background-color: white;
 
 }
-#HomeBtn{
+#home {
   color: purple;
   margin-left: 52px;
   margin-top: 45px;
   position: fixed;
 }
-#LikedBtn{
+#like {
     color: purple;
     width: 5%;
     position: absolute;
@@ -42,7 +43,7 @@ img{
     display: inline-block;
     position: relative;
 }
-#First2 {
+#animalDisplay {
     text-align: center;
 }
 #description {
@@ -51,4 +52,6 @@ img{
     margin-right: auto;
     padding: 25px;
     border: 5px solid black;
+    background-color: white;
 }
+*/
