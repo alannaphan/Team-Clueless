@@ -28,7 +28,7 @@ footer {
 }
 
 html{
-    background-color: darkseagreen ;
+    background-color: darkseagreen;
 }
 #header{
    
@@ -39,28 +39,37 @@ html{
 }
 #TheList{
  text-align: left;
+ text-size-adjust: 50px;
  position: fixed;
- border:5px dotted #000000 ;
+ border:5px double #000000 ;
  padding-right: 15px;
  margin: 50px;
- background-color: white;
+ background-color: ivory;
+  list-style-type: circle;
 
 }
 #homeBtn {
- color: purple;
+ color: black;
  margin-left: 52px;
  margin-top: 45px;
  position: fixed;
+ background-color: ivory;
+font-size: 24px;
+
+
 }
 #home {
     margin-left: 200px;
-    color: purple;
+    color: black;
+    background-color: ivory;
 }
 #like {
-   color: purple;
+   color: black;
    width: 5%;
    position: absolute;
    right: 200px;
+background-color:ivory;
+font-size: 24px;
 
 }
 #more {
@@ -87,6 +96,7 @@ img {
     margin-right: auto;
     display: block;
     position: relative;
+    
 }
 #info {
    width: 500px;
@@ -94,7 +104,7 @@ img {
    margin-right: auto;
    padding: 25px;
    border: 5px solid black;
-   background-color: white;
+   background-color: ivory;
 }
 div span {
     position: static;
@@ -103,3 +113,14 @@ div span {
     font-size: 50px;
     display: block;
 }
+a:link{
+   color: black;
+   size: 50px;
+}
+a:visited{
+    color: black;
+ }
+ ul.a{
+    list-style-type: circle;
+   font-size: 27px; 
+ }
