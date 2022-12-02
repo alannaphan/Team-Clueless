@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Database of Animal Images</title>
-    <link rel="stylesheet" href="display.css" type="text/css">
+    <link rel="stylesheet" href="display.css" type="css/text">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -13,7 +14,7 @@
     <h1 id="header">Database of Animals</h1>
     <h1 id="name">Cat</h1>
     <button id="home" onclick="home()">Home</button>
-    <button id="like" onclick="liked()">Like</button>
+    <button id="like" onclick="liked('Cat')">Like</button>
 
     <div id="animalDisplay">
     <img id="ani1" src="photos\cats\cat1.jpg">
