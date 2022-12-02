@@ -1,1 +1,28 @@
 /* this is the css for the animal display pages*/ 
+img {
+    width: 600px;
+    height: 500px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+#animalDisplay {
+    text-align: center;
+}
+h1, h2 {
+    text-align: center;
+}
+#description {
+    width: 300px;
+    padding: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border: 2px solid black ;
+}
+
+
+footer {
+    text-align: center;
+}
