@@ -3,12 +3,12 @@
         { "name": "Capybara", "likes": 3},
         {"name": "Cat", "likes": 1},
         {"name":"Dog", "likes":10},
-        {"name":"Giant Panda", "likes":6},
+        {"name":"GiantPanda", "likes":6},
         {"name":"Hedgehog", "likes":2},
         {"name":"Horse", "likes":2},
         {"name":"Penguin", "likes":5},
         {"name":"Rabbit", "likes":7},
-        {"name":"Red Panda", "likes":15},
+        {"name":"RedPanda", "likes":15},
         {"name":"Tiger", "likes":8},
         {"name":"Wombat", "likes":2}
     ]

@@ -27,6 +27,7 @@ app.get("/", function(req, res) {
 })
 
 app.get("/likes", function(req, res) {
+    res.setHeader("Access-Control-Allow-Origin", "*") //don't worry about this, just a security thing to allow us to test without problems. If you are curious; CORS is the term to look up.
     fs.readFile(dbPath, (err, jsonString) => {
         if (err) {
             console.log("File read failed:" + err);
@@ -43,6 +44,14 @@ app.get("/likes", function(req, res) {
 
     })
 });
+
+app.post("/api/like/:animalName", function(req, res) {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    const animalName = req.params.animalName;
+
+    
+
+})
 
 /*
  * Remember how before I talked about listening on a port? We do that here. Our app "pauses" and waits for requests to come in.
