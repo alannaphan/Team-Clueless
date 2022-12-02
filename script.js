@@ -46,10 +46,13 @@ function back(){
     window.history.back(); 
 }
 function liked(animal){
-      $.postJSON("http://localhost:8000/api/like/" + animal, function(data) {
+      $.post("http://localhost:8000/api/like/" + animal, function(data) {
             var response = data;
-            
       })
+}
+
+function likedPage() {
+      window.location.href="LikedPage.html";
 }
 
 /**

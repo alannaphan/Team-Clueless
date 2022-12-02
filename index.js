@@ -6,6 +6,7 @@ const express = require("express");
 const fs = require("fs");
 //filename of likes database
 const dbPath = "./likes.json";
+const file = require(dbPath);
 //this is the main app. Apps can get complicated. For now, think of it as a place to store your routes
 const app = express();
 
@@ -26,8 +27,13 @@ app.get("/", function(req, res) {
     })
 })
 
+/**
+ * Returns the animal names and likes from database and sorts them based on number of likes
+ */
 app.get("/likes", function(req, res) {
     res.setHeader("Access-Control-Allow-Origin", "*") //don't worry about this, just a security thing to allow us to test without problems. If you are curious; CORS is the term to look up.
+    
+    // read data from json database. Send error if fail
     fs.readFile(dbPath, (err, jsonString) => {
         if (err) {
             console.log("File read failed:" + err);
@@ -45,12 +51,30 @@ app.get("/likes", function(req, res) {
     })
 });
 
+/**
+ * Increases the number of liked of animalName by 1
+ */
 app.post("/api/like/:animalName", function(req, res) {
     res.setHeader("Access-Control-Allow-Origin", "*");
+
+    // retrieves the value of path parameter animalName
     const animalName = req.params.animalName;
 
-    
+    // loop through the objects in the LikedAnimals array and increase likes by 1
+    file.LikedAnimals.forEach(i => {
+        if(i.name === animalName) {
+            i.likes += 1;
+        }
+    });
 
+    // write changes to the JSON database
+    fs.writeFile(dbPath, JSON.stringify(file), function writeJSON(err) {
+        if (err) {
+            res.sendStatus(500);
+        }
+        console.log(JSON.stringify(file));
+        res.send(JSON.stringify(file));
+    })
 })
 
 /*
