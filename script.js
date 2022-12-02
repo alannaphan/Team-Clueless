@@ -49,6 +49,7 @@ function liked(animal){
       $.post("http://localhost:8000/api/like/" + animal, function(data) {
             var response = data;
       })
+      window.alert("You added 1 like to "+animal+"!")
 }
 
 function likedPage() {
