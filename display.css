@@ -22,6 +22,7 @@ h1, h2 {
     padding-bottom: 10px;
     border: 5px solid grey;
     text-align: center;
+    background-color: ivory;
 }
 footer {
     text-align: center;
@@ -62,6 +63,7 @@ font-size: 24px;
     margin-left: 200px;
     color: black;
     background-color: ivory;
+   font-size: 24px;
 }
 #like {
    color: black;
@@ -76,7 +78,11 @@ font-size: 24px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: purple;
+}
+#moreDetail {
+    color: black;
+    background-color: ivory;
+   font-size: 24px;
 }
 footer{
    text-align: center;
