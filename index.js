@@ -1,13 +1,16 @@
 // This is the start of your backend server. We will write server side code here
 
 //this is a node package that will help us create a server
-const express = require("express")
-
+const express = require("express");
+//this node package will allow you to read and write to files
+const fs = require("fs");
+//filename of likes database
+const dbPath = "./likes.json";
 //this is the main app. Apps can get complicated. For now, think of it as a place to store your routes
-const app = express()
+const app = express();
 
 //this is the port we are going to listen on. Backend programs listen on ports to get information from other computers
-const PORT = 8000
+const PORT = 8000;
 
 /**
  * This is a route. Routes help the computer understand what the user is trying to access.
@@ -23,11 +26,29 @@ app.get("/", function(req, res) {
     })
 })
 
-/**
+app.get("/likes", function(req, res) {
+    fs.readFile(dbPath, (err, jsonString) => {
+        if (err) {
+            console.log("File read failed:" + err);
+            res.sendStatus(500);
+        }
+
+        const data = JSON.parse(jsonString);
+        const likedAnimals = data.LikedAnimals;
+
+        // sort the likedAnimals array based on likes
+        const sorted = likedAnimals.sort((a, b) => b.likes - a.likes);
+        console.log(sorted);
+        res.send(sorted);
+
+    })
+});
+
+/*
  * Remember how before I talked about listening on a port? We do that here. Our app "pauses" and waits for requests to come in.
  * 
  * These requests can be from browsers, other computers in the cloud, or even your fridge!
  */
 app.listen(PORT, function() {
-    console.log(`Listening on port ${PORT}`)
+    console.log(`Listening on port ${PORT}`);
 })
