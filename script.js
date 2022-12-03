@@ -35,6 +35,8 @@ function moreDetail(animal){
     case (11): 
           window.location.href="moreWombat.html";
           break;
+     default: 
+     return true;
     }
 }
 
@@ -49,7 +51,7 @@ function liked(animal){
       $.post("http://localhost:8000/api/like/" + animal, function(data) {
             var response = data;
       })
-      window.alert("You added 1 like to "+animal+"!")
+      window.alert("You added 1 like to "+animal+"!");
 }
 
 function likedPage() {
@@ -134,6 +136,7 @@ function loadLikedPage() {
                 animalData.append(likesAnimals);
                 
                 mainDiv.append(animalData);
+
             }
       })
 }
