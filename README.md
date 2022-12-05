@@ -1,7 +1,7 @@
 # Team-Clueless 
 This is a group project for our class EECS 1012. 
 <br><br>
-Our project is going to be a mini database that users can interact with to view animal images. Users will be inputting an image or object of an animal that they would like displayed on the screen. The server will send an image to the client and display it on a display area for users to visualize. There will be a list of animal images/objects to choose from on the database. The list will be on the side of the webpage for easy accessibility for users. There may be more than one image to choose from for each animal after being selected. A mutual fascination with animals resulted in this choice for the project. 
+The project is a mini database that users can interact with to view animal images. Users can select from a list of animals to view pictures of the animal that they want. The list will be on the side of the webpage for easy accessibility for users. The website will display images of the selected animal on a new page. Users can read more about the animal that is selected, as well as upvoting their favourite animals to increase its popularity on the website. A mutual fascination with animals among our team led to this idea for our project and ultimately our finished website.
 <br><br>
 # Running the Project
 1. Download the zip folder.
